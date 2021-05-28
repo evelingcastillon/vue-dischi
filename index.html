@@ -5,14 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     <div id="app">
-        <div class="container" v-for="song in songs">
-            <div class="song" v-for="s in song">
-                <img :src="s.poster" alt="">
+
+        <header>
+            <img class="logo" src="./assets/img/logo.png" alt="">
+        </header>
+
+        <main>
+            <div class="container" v-for="song in songs">
+                <div class="song" v-for="s in song">
+                    <img :src="s.poster" alt="">
+                    <div>{{s.author}}</div>
+                    <div>{{s.year}}</div>
+                </div>
             </div>
-        </div>
+        </main>
     </div>
     <!-- vue js cdn -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>

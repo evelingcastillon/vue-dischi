@@ -10,6 +10,7 @@ const app = new Vue ({
         .get(this.url)
         .then(resp => {
             this.songs.push(resp.data.response);
+            console.log(resp.data.response);
         })
     }
 
