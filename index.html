@@ -18,8 +18,11 @@
             <div class="container" v-for="song in songs">
                 <div class="song" v-for="s in song">
                     <img :src="s.poster" alt="">
-                    <div>{{s.author}}</div>
-                    <div>{{s.year}}</div>
+                    <div class="box_text">
+                        <div class="title">{{s.title}}</div>
+                        <p class="text">{{s.author}}</p>
+                        <p class="text">{{s.year}}</p>
+                    </div>
                 </div>
             </div>
         </main>

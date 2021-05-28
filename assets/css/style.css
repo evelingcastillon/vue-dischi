@@ -3,32 +3,57 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header {
-    height: 40PX;
+    height: 45PX;
     background-color: rgba(46, 58, 70, 1);
+    display: flex;
+    align-items: center;
 }
 .logo {
     width: 35px;
-    line-height: 40px;
+    height: 35px;
+    padding: 0.2rem;
+}
+body {
+    background-color: rgba(30, 45, 59, 1);
 }
 .song {
+    height: 300px;
     background-color: rgba(46, 58, 70, 1);
     padding: 1rem;
     margin: 0.5rem 1rem;
 }
-.song > img {
-    width: 120px;
-    height: 120px;
-}
-
 .container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     padding-top: 2rem;
 }
-body {
-    background-color: rgba(30, 45, 59, 1);
+.song > img {
+    width: 130px;
+    height: 130px;
+}
+.box_text {
+    text-align: center;
+    max-width: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around ;
+    align-items: center;
+    padding: 0.8rem 0;
+}
+.text {
+    font-size: 14px;
+    color: rgba(120, 124, 127, 1);
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 700;
+    padding-bottom: 1rem;
 }
