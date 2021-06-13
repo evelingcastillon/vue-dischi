@@ -15,15 +15,18 @@
         </header>
 
         <main>
-            <div class="container" v-for="song in songs">
-                <div class="song" v-for="s in song">
-                    <img :src="s.poster" alt="">
+            <div class="container" v-if="!errors">
+                <div class="song" v-for="song in songs">
+                    <img :src="song.poster" alt="">
                     <div class="box_text">
-                        <div class="title">{{s.title}}</div>
-                        <p class="text">{{s.author}}</p>
-                        <p class="text">{{s.year}}</p>
+                        <div class="title">{{song.title}}</div>
+                        <p class="text">{{song.author}}</p>
+                        <p class="text">{{song.year}}</p>
                     </div>
                 </div>
+            </div>
+            <div v-else>
+                <h3> {{errors}} </h3>
             </div>
         </main>
     </div>
